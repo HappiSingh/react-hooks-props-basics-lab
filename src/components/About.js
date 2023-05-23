@@ -1,7 +1,6 @@
 import React from "react";
 import Links from "./Links";
 
-
 function About(props) {
   function BioTest(props) {
     if (!props.bio || props.bio === "") {
@@ -18,6 +17,8 @@ function About(props) {
       {BioTest(props)}
 
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
+
+      <Links github={props.github} linkedin={props.linkedin} />
     </div>
   );
 }
